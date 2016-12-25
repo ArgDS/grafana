@@ -15,6 +15,16 @@ var spans = {
 };
 
 var rangeOptions = [
+  { from: '2016-04-01T00:00:00',    to: '2016-06-30T23:59:59',    display: 'I период',    section: 4 },
+  { from: '2016-07-01T00:00:00',    to: '2016-09-30T23:59:59',    display: 'II период',   section: 4 },
+  { from: '2016-10-01T00:00:00',    to: '2016-12-31T23:59:59',    display: 'III период',  section: 4 },
+  { from: '2017-01-01T00:00:00',    to: '2017-03-31T23:59:59',    display: 'IV период',   section: 4 },
+  { from: '2017-04-01T00:00:00',    to: '2017-06-30T23:59:59',    display: 'V период',    section: 4 },
+  { from: '2017-07-01T00:00:00',    to: '2017-09-30T23:59:59',    display: 'VI период',   section: 4 },
+  { from: '2017-10-01T00:00:00',    to: '2017-12-31T23:59:59',    display: 'VII период',  section: 4 },
+  { from: '2018-01-01T00:00:00',    to: '2018-03-31T23:59:59',    display: 'VIII период', section: 4 },
+  { from: '2018-04-01T00:00:00',    to: '2018-06-30T23:59:59',    display: 'IX период',   section: 4 },
+
   { from: 'now/d',    to: 'now/d',    display: 'Today',                 section: 2 },
   { from: 'now/d',    to: 'now',      display: 'Today so far',          section: 2 },
   { from: 'now/w',    to: 'now/w',    display: 'This week',             section: 2 },

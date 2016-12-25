@@ -7,6 +7,7 @@ module.exports = function (grunt) {
     baseDir: '.',
     srcDir: 'public',
     genDir: 'public_gen',
+    workDir: 'D:\\grafana-lanit\\grafana-4.0.2\\public',
     destDir: 'dist',
     tempDir: 'tmp',
     platform: process.platform.replace('win32', 'windows'),

@@ -14,6 +14,12 @@ module.exports = function(config) {
       src: ['**/*', '!**/*.less'],
       dest: '<%= genDir %>'
     },
+    public_to_work_copy: {
+      cwd: '<%= genDir %>',
+      expand: true,
+      src: ['**/*', '!**/*.less'],
+      dest: '<%= workDir %>'
+    },
 
     node_modules: {
       cwd: './node_modules',
