@@ -15,47 +15,17 @@ var spans = {
 };
 
 var rangeOptions = [
-  { from: '2016-04-01T00:00:00',    to: '2016-06-30T23:59:59',    display: 'I период',    section: 4 },
-  { from: '2016-07-01T00:00:00',    to: '2016-09-30T23:59:59',    display: 'II период',   section: 4 },
-  { from: '2016-10-01T00:00:00',    to: '2016-12-31T23:59:59',    display: 'III период',  section: 4 },
-  { from: '2017-01-01T00:00:00',    to: '2017-03-31T23:59:59',    display: 'IV период',   section: 4 },
-  { from: '2017-04-01T00:00:00',    to: '2017-06-30T23:59:59',    display: 'V период',    section: 4 },
-  { from: '2017-07-01T00:00:00',    to: '2017-09-30T23:59:59',    display: 'VI период',   section: 4 },
-  { from: '2017-10-01T00:00:00',    to: '2017-12-31T23:59:59',    display: 'VII период',  section: 4 },
-  { from: '2018-01-01T00:00:00',    to: '2018-03-31T23:59:59',    display: 'VIII период', section: 4 },
-  { from: '2018-04-01T00:00:00',    to: '2018-06-30T23:59:59',    display: 'IX период',   section: 4 },
+  { from: '2016-04-01T00:00:00',    to: '2016-06-30T23:59:59',    display: 'I период',    section: 0 },
+  { from: '2016-07-01T00:00:00',    to: '2016-09-30T23:59:59',    display: 'II период',   section: 0 },
+  { from: '2016-10-01T00:00:00',    to: '2016-12-31T23:59:59',    display: 'III период',  section: 0 },
+  { from: '2017-01-01T00:00:00',    to: '2017-03-31T23:59:59',    display: 'IV период',   section: 0 },
+  { from: '2017-04-01T00:00:00',    to: '2017-06-30T23:59:59',    display: 'V период',    section: 0 },
+  { from: '2017-07-01T00:00:00',    to: '2017-09-30T23:59:59',    display: 'VI период',   section: 0 },
+  { from: '2017-10-01T00:00:00',    to: '2017-12-31T23:59:59',    display: 'VII период',  section: 0 },
+  { from: '2018-01-01T00:00:00',    to: '2018-03-31T23:59:59',    display: 'VIII период', section: 0 },
+  { from: '2018-04-01T00:00:00',    to: '2018-06-30T23:59:59',    display: 'IX период',   section: 0 },
 
-  { from: 'now/d',    to: 'now/d',    display: 'Today',                 section: 2 },
-  { from: 'now/d',    to: 'now',      display: 'Today so far',          section: 2 },
-  { from: 'now/w',    to: 'now/w',    display: 'This week',             section: 2 },
-  { from: 'now/w',    to: 'now',      display: 'This week so far',           section: 2 },
-  { from: 'now/M',    to: 'now/M',    display: 'This month',            section: 2 },
-  { from: 'now/y',    to: 'now/y',    display: 'This year',             section: 2 },
 
-  { from: 'now-1d/d', to: 'now-1d/d', display: 'Yesterday',             section: 1 },
-  { from: 'now-2d/d', to: 'now-2d/d', display: 'Day before yesterday',  section: 1 },
-  { from: 'now-7d/d', to: 'now-7d/d', display: 'This day last week',    section: 1 },
-  { from: 'now-1w/w', to: 'now-1w/w', display: 'Previous week',         section: 1 },
-  { from: 'now-1M/M', to: 'now-1M/M', display: 'Previous month',        section: 1 },
-  { from: 'now-1y/y', to: 'now-1y/y', display: 'Previous year',         section: 1 },
-
-  { from: 'now-5m',   to: 'now',      display: 'Last 5 minutes',        section: 3 },
-  { from: 'now-15m',  to: 'now',      display: 'Last 15 minutes',       section: 3 },
-  { from: 'now-30m',  to: 'now',      display: 'Last 30 minutes',       section: 3 },
-  { from: 'now-1h',   to: 'now',      display: 'Last 1 hour',           section: 3 },
-  { from: 'now-3h',   to: 'now',      display: 'Last 3 hours',          section: 3 },
-  { from: 'now-6h',   to: 'now',      display: 'Last 6 hours',          section: 3 },
-  { from: 'now-12h',  to: 'now',      display: 'Last 12 hours',         section: 3 },
-  { from: 'now-24h',  to: 'now',      display: 'Last 24 hours',         section: 3 },
-
-  { from: 'now-2d',   to: 'now',      display: 'Last 2 days',           section: 0 },
-  { from: 'now-7d',   to: 'now',      display: 'Last 7 days',           section: 0 },
-  { from: 'now-30d',  to: 'now',      display: 'Last 30 days',          section: 0 },
-  { from: 'now-60d',  to: 'now',      display: 'Last 60 days',          section: 0 },
-  { from: 'now-6M',   to: 'now',      display: 'Last 6 months',         section: 0 },
-  { from: 'now-1y',   to: 'now',      display: 'Last 1 year',           section: 0 },
-  { from: 'now-2y',   to: 'now',      display: 'Last 2 years',          section: 0 },
-  { from: 'now-5y',   to: 'now',      display: 'Last 5 years',          section: 0 },
 ];
 
 var absoluteFormat = 'MMM D, YYYY HH:mm:ss';
