@@ -10,6 +10,8 @@ import 'angular-dragdrop';
 import 'angular-bindonce';
 import 'angular-ui';
 
+import 'app/i18n/angular-locale_ru_ru';
+
 import $ from 'jquery';
 import angular from 'angular';
 import config from 'app/core/config';

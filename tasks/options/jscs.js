@@ -4,7 +4,8 @@ module.exports = function(config) {
       'Gruntfile.js',
       '<%= srcDir %>/app/**/*.js',
       '<%= srcDir %>/plugin/**/*.js',
-      '!<%= srcDir %>/app/dashboards/*'
+      '!<%= srcDir %>/app/dashboards/*',
+      '!<%= srcDir %>/app/i18n/*'
     ],
     options: {
       config: ".jscs.json",

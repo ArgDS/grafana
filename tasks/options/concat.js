@@ -34,7 +34,7 @@ module.exports = function(config) {
         '<%= genDir %>/vendor/npm/systemjs/dist/system-polyfills.js',
         '<%= genDir %>/vendor/npm/systemjs/dist/system.js',
         '<%= genDir %>/app/system.conf.js',
-        '<%= genDir %>/app/boot.js',
+        '<%= genDir %>/app/boot.js'
       ],
       dest: '<%= genDir %>/app/boot.js'
     },

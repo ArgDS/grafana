@@ -26,6 +26,30 @@ module.exports = function(grunt) {
     'uglify:genDir'
   ]);
 
+  grunt.registerTask('buildRelease', [
+    'jshint:source',
+    'jshint:tests',
+    'jscs',
+    'exec:tslint',
+    'clean:release',
+    'copy:node_modules',
+    'copy:public_to_gen',
+    'exec:tscompile',
+    'karma:test',
+    'phantomjs',
+    'css',
+    'htmlmin:build',
+    'ngtemplates',
+    'cssmin:build',
+    'ngAnnotate:build',
+    'systemjs:build',
+    'concat:js',
+    'filerev',
+    'remapFilerev',
+    'usemin',
+    'uglify:genDir'
+  ]);
+
   // task to add [[.AppSubUrl]] to reved path
   grunt.registerTask('remapFilerev', function() {
     var root = grunt.config().genDir;

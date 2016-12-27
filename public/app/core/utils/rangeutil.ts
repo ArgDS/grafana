@@ -5,13 +5,13 @@ import moment from 'moment';
 import * as dateMath from './datemath';
 
 var spans = {
-  's': {display: 'second'},
-  'm': {display: 'minute'},
-  'h': {display: 'hour'},
-  'd': {display: 'day'},
-  'w': {display: 'week'},
-  'M': {display: 'month'},
-  'y': {display: 'year'},
+  's': {display: 'секунда'},
+  'm': {display: 'минута'},
+  'h': {display: 'час'},
+  'd': {display: 'день'},
+  'w': {display: 'неделя'},
+  'M': {display: 'месяц'},
+  'y': {display: 'год'},
 };
 
 var rangeOptions = [
