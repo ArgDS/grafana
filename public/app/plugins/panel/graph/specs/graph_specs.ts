@@ -213,7 +213,7 @@ describe('grafanaGraph', function() {
 
       it('should format dates as month days', function() {
         var axis = ctx.plotOptions.xaxis;
-        expect(axis.timeformat).to.be('%m/%d');
+        expect(axis.timeformat).to.be('%m.%d');
       });
     });
 

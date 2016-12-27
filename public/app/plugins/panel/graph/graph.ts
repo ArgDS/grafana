@@ -559,10 +559,10 @@ coreModule.directive('grafanaGraph', function($rootScope, timeSrv) {
             return "%H:%M";
           }
           if (secPerTick <= 80000) {
-            return "%m/%d %H:%M";
+            return "%m.%d %H:%M";
           }
           if (secPerTick <= 2419200 || range <= oneYear) {
-            return "%m/%d";
+            return "%m.%d";
           }
           return "%Y-%m";
         }
