@@ -70,7 +70,7 @@ class TablePanelCtrl extends MetricsPanelCtrl {
   }
 
   onInitPanelActions(actions) {
-    actions.push({text: 'Export CSV', click: 'ctrl.exportCsv()'});
+    actions.push({text: '"Экспорт в CSV', click: 'ctrl.exportCsv()'});
   }
 
   issueQueries(datasource) {

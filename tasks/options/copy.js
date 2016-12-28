@@ -20,6 +20,12 @@ module.exports = function(config) {
       src: ['**/*', '!**/*.less'],
       dest: '<%= workDir %>'
     },
+    bin_to_work_copy: {
+      cwd: '<%= binDir %>',
+      expand: true,
+      src: ['**/*', '!**/*.less'],
+      dest: '<%= workDirBin %>'
+    },
 
     node_modules: {
       cwd: './node_modules',

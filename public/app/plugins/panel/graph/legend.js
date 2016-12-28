@@ -87,9 +87,18 @@ function (angular, _, $) {
           render();
         }
 
+        var headers = {
+          'min': 'Мин.',
+          'max': 'Макс.',
+          'avg': 'Сред.',
+          'current': 'Текущее',
+          'total': 'Итого'
+        };
+
         function getTableHeaderHtml(statName) {
           if (!panel.legend[statName]) { return ""; }
-          var html = '<th class="pointer" data-stat="' + statName + '">' + statName;
+          var currentHeader = headers[statName];
+          var html = '<th class="pointer" data-stat="' + statName + '">' + currentHeader;
 
           if (panel.legend.sort === statName) {
             var cssClass = panel.legend.sortDesc ? 'fa fa-caret-down' : 'fa fa-caret-up' ;
@@ -133,6 +142,7 @@ function (angular, _, $) {
               header += getTableHeaderHtml('avg');
               header += getTableHeaderHtml('current');
               header += getTableHeaderHtml('total');
+
             }
             header += '</tr>';
             $container.append($(header));

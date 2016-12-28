@@ -8,7 +8,7 @@ import * as rangeUtil from 'app/core/utils/rangeutil';
 
 export class TimePickerCtrl {
 
-  static tooltipFormat = 'MMM D, YYYY HH:mm:ss';
+  static tooltipFormat = ' D-MMM-YYYY HH:mm:ss';
   static defaults = {
     time_options: ['5m', '15m', '1h', '6h', '12h', '24h', '2d', '7d', '30d'],
     refresh_intervals: ['5s', '10s', '30s', '1m', '5m', '15m', '30m', '1h', '2h', '1d'],
@@ -63,7 +63,7 @@ export class TimePickerCtrl {
 
     this.rangeString = rangeUtil.describeTimeRange(timeRaw);
     this.absolute = {fromJs: time.from.toDate(), toJs: time.to.toDate()};
-    this.tooltip = this.dashboard.formatDate(time.from) + ' <br>to<br>';
+    this.tooltip = '<br>от<br>' + this.dashboard.formatDate(time.from) + ' <br>до<br>';
     this.tooltip += this.dashboard.formatDate(time.to);
 
     // do not update time raw when dropdown is open

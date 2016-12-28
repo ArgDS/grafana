@@ -140,17 +140,17 @@ export class PanelCtrl {
 
   getMenu() {
     let menu = [];
-    menu.push({text: 'View', click: 'ctrl.viewPanel(); dismiss();'});
-    menu.push({text: 'Edit', click: 'ctrl.editPanel(); dismiss();', role: 'Editor'});
+    menu.push({text: 'Просмотр', click: 'ctrl.viewPanel(); dismiss();'});
+    menu.push({text: 'Редактировать', click: 'ctrl.editPanel(); dismiss();', role: 'Editor'});
     if (!this.fullscreen) { //  duplication is not supported in fullscreen mode
-      menu.push({ text: 'Duplicate', click: 'ctrl.duplicate()', role: 'Editor' });
+      menu.push({ text: 'Клонировать', click: 'ctrl.duplicate()', role: 'Editor' });
     }
-    menu.push({text: 'Share', click: 'ctrl.sharePanel(); dismiss();'});
+    menu.push({text: 'Поделится', click: 'ctrl.sharePanel(); dismiss();'});
     return menu;
   }
 
   getExtendedMenu() {
-    var actions = [{text: 'Panel JSON', click: 'ctrl.editPanelJson(); dismiss();'}];
+    var actions = [{text: 'Окно с JSON документом панели', click: 'ctrl.editPanelJson(); dismiss();'}];
     this.events.emit('init-panel-actions', actions);
     return actions;
   }

@@ -138,9 +138,9 @@ class GraphCtrl extends MetricsPanelCtrl {
   }
 
   onInitPanelActions(actions) {
-    actions.push({text: 'Export CSV (series as rows)', click: 'ctrl.exportCsv()'});
-    actions.push({text: 'Export CSV (series as columns)', click: 'ctrl.exportCsvColumns()'});
-    actions.push({text: 'Toggle legend', click: 'ctrl.toggleLegend()'});
+    actions.push({text: 'Экспорт в CSV (ряд как строка)', click: 'ctrl.exportCsv()'});
+    actions.push({text: 'Экспорт в CSV (ряд как колонка)', click: 'ctrl.exportCsvColumns()'});
+    actions.push({text: 'Включить легенду', click: 'ctrl.toggleLegend()'});
   }
 
   issueQueries(datasource) {

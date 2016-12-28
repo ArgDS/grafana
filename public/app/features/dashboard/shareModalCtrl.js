@@ -16,7 +16,7 @@ function (angular, _, require, config) {
     $scope.init = function() {
       $scope.modeSharePanel = $scope.panel ? true : false;
 
-      $scope.tabs = [{title: 'Link', src: 'shareLink.html'}];
+      $scope.tabs = [{title: 'Ссылка', src: 'shareLink.html'}];
 
       if ($scope.modeSharePanel) {
         $scope.modalTitle = 'Share Panel';
@@ -26,11 +26,11 @@ function (angular, _, require, config) {
       }
 
       if (!$scope.dashboard.meta.isSnapshot) {
-        $scope.tabs.push({title: 'Snapshot', src: 'shareSnapshot.html'});
+        $scope.tabs.push({title: 'Снимок', src: 'shareSnapshot.html'});
       }
 
       if (!$scope.dashboard.meta.isSnapshot && !$scope.modeSharePanel) {
-        $scope.tabs.push({title: 'Export', src: 'shareExport.html'});
+        $scope.tabs.push({title: 'Экспорт', src: 'shareExport.html'});
       }
 
       $scope.buildUrl();

@@ -11,37 +11,37 @@ export class HelpCtrl {
   constructor(private $scope, $sce) {
     this.tabIndex = 0;
     this.shortcuts = {
-      'Global': [
-        {keys: ['g', 'h'], description: 'Go to Home Dashboard'},
-        {keys: ['g', 'p'], description: 'Go to Profile'},
-        {keys: ['s', 'o'], description: 'Open search'},
-        {keys: ['s', 's'], description: 'Open search with starred filter'},
-        {keys: ['s', 't'], description: 'Open search in tags view'},
-        {keys: ['esc'], description: 'Exit edit/setting views'},
+      'Глобальные команды': [
+        {keys: ['g', 'h'], description: 'Перейти к главной панели'},
+        {keys: ['g', 'p'], description: 'Перейти в профиль'},
+        {keys: ['s', 'o'], description: 'Открыть поиск'},
+        {keys: ['s', 's'], description: 'Открыть поиск по "Избранным"'},
+        {keys: ['s', 't'], description: 'Открыть поиск по Тегам'},
+        {keys: ['esc'], description: 'Закрыть окно редактирования/настроек'},
       ],
-      'Dashboard': [
-        {keys: ['mod+s'], description: 'Save dashboard'},
-        {keys: ['mod+h'], description: 'Hide row controls'},
-        {keys: ['d', 'r'], description: 'Refresh all panels'},
-        {keys: ['d', 's'], description: 'Dashboard settings'},
-        {keys: ['d', 'v'], description: 'Toggle in-active / view mode'},
-        {keys: ['d', 'k'], description: 'Toggle kiosk mode (hides top nav)'},
-        {keys: ['mod+o'], description: 'Toggle shared graph crosshair'},
+      'Команды панели': [
+        {keys: ['mod+s'], description: 'Сохранить панель'},
+        {keys: ['mod+h'], description: 'Скрыть команды управления для строки'},
+        {keys: ['d', 'r'], description: 'Обновить все панели'},
+        {keys: ['d', 's'], description: 'Настройки панели'},
+        {keys: ['d', 'v'], description: 'Переключить в активный режим'},
+        {keys: ['d', 'k'], description: 'Скрыть верхнюю строки управления'}/*,
+        {keys: ['mod+o'], description: 'Toggle shared graph crosshair'},*/
       ],
-      'Focused Panel': [
-        {keys: ['e'], description: 'Toggle panel edit view'},
-        {keys: ['v'], description: 'Toggle panel fullscreen view'},
-        {keys: ['p', 's'], description: 'Open Panel Share Modal'},
-        {keys: ['p', 'r'], description: 'Remove Panel'},
+      'Команды активной панели': [
+        {keys: ['e'], description: 'Переключить в режим редактирования'},
+        {keys: ['v'], description: 'Переключить в полноэкранный режим просмотра'},
+        {keys: ['p', 's'], description: 'Открыть окно для создания ссылки на панель'},
+        {keys: ['p', 'r'], description: 'Удалить панель'},
       ],
-      'Focused Row': [
-        {keys: ['r', 'c'], description: 'Collapse Row'},
-        {keys: ['r', 'r'], description: 'Remove Row'},
+      'Команды активной строки': [
+        {keys: ['r', 'c'], description: 'Свернуть'},
+        {keys: ['r', 'r'], description: 'Удалить'},
       ],
-      'Time Range': [
-        {keys: ['t', 'z'], description: 'Zoom out time range'},
-        {keys: ['t', '<i class="fa fa-long-arrow-left"></i>'], description: 'Move time range back'},
-        {keys: ['t', '<i class="fa fa-long-arrow-right"></i>'], description: 'Move time range forward'},
+      'Команды для управления временным интервалом': [
+        {keys: ['t', 'z'], description: 'Уменьшить интервал'},
+        {keys: ['t', '<i class="fa fa-long-arrow-left"></i>'], description: 'Просмотреть раньше'},
+        {keys: ['t', '<i class="fa fa-long-arrow-right"></i>'], description: 'Просмотреть позже'},
       ],
     };
   }

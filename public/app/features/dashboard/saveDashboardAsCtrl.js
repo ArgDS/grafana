@@ -11,7 +11,7 @@ function (angular) {
     $scope.init = function() {
       $scope.clone.id = null;
       $scope.clone.editable = true;
-      $scope.clone.title = $scope.clone.title + " Copy";
+      $scope.clone.title = $scope.clone.title + " Копия";
 
       // remove alerts
       $scope.clone.rows.forEach(function(row) {
@@ -26,7 +26,7 @@ function (angular) {
 
     function saveDashboard(options) {
       return backendSrv.saveDashboard($scope.clone, options).then(function(result) {
-        $scope.appEvent('alert-success', ['Dashboard saved', 'Saved as ' + $scope.clone.title]);
+        $scope.appEvent('alert-success', ['Панель сохранена', 'Сохранена как \"' + $scope.clone.title + '\"']);
 
         $location.url('/dashboard/db/' + result.slug);
 
@@ -47,10 +47,10 @@ function (angular) {
           err.isHandled = true;
 
           $scope.appEvent('confirm-modal', {
-            title: 'Conflict',
-            text: 'Dashboard with the same name exists.',
-            text2: 'Would you still like to save this dashboard?',
-            yesText: "Save & Overwrite",
+            title: 'Конфликт',
+            text: 'Панель с таким именем уже существует.',
+            text2: 'Сохранить панель с этим именем?',
+            yesText: "Сохранить и перезаписать",
             icon: "fa-warning",
             onConfirm: function() {
               saveDashboard({overwrite: true});

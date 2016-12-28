@@ -44,7 +44,7 @@ export class DashboardSrv {
         this.$location.url(dashboardUrl);
       }
 
-      this.$rootScope.appEvent('alert-success', ['Dashboard saved', 'Saved as ' + clone.title]);
+      this.$rootScope.appEvent('alert-success', ['Панель сохранена', 'Сохранена как \"' + clone.title + '\"']);
     }).catch(this.handleSaveDashboardError.bind(this));
   }
 
